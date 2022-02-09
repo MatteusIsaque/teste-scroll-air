@@ -12,44 +12,32 @@ import ReformAndConstruction from '../components/index/ReformAndConstruction';
 
 import { ScrollTrigger } from 'gsap/dist/ScrollTrigger'
 
-import { ScrollToPlugin } from 'gsap/dist/ScrollToPlugin'
 import gsap from 'gsap'
 
 import { useEffect } from 'react'
 
-gsap.registerPlugin(ScrollTrigger, ScrollToPlugin)
+gsap.registerPlugin(ScrollTrigger)
 
 export default function Index() {
 
-  const t1 = gsap.timeline()
 
   useEffect(() => {
     const elements: any = gsap.utils.toArray('#element')
-    const altura = window.innerHeight
+
+    console.log(elements.length - 1)
 
     gsap.to(elements, {
-      yPercent: -100 * (elements.length - 1),
+      yPercent: - 100 * (elements.length - 1),
       ease: "none",
       scrollTrigger: {
         trigger: "#mainID",
         pin: true,
-        scrub: 0.4,
+        scrub: 0.5,
         snap: 1 / (elements.length - 1) + 0.002,
         // base vertical scrolling on how wide the container is so it feels more natural.
-        end: "+=3500",
+
       }
     });
-
-    // t1.to(elements[1], { position: "fixed" })
-
-    // ScrollTrigger.create({
-    //   toggleActions: "play play none reverse",
-    //   animation: t1,
-    //   start: altura + 2 + 1,
-    //   end: altura * 4,'
-    //   // markers: true
-    // })
-
   }, [])
 
 
@@ -88,12 +76,16 @@ export default function Index() {
               o
             </Link>
           </li>
+          <li>
+            <Link activeClass='active' className="buttonNav" to="sétimo" spy={true} smooth={true}>
+              o
+            </Link>
+          </li>
         </ul>
       </nav>
 
       <Element name='primeiro' id="element">
         <First />
-
       </Element>
 
       <Element name='segundo' id="element" >
@@ -102,22 +94,22 @@ export default function Index() {
 
       <Element name="terceiro" id="element">
         <ArchitectureProject />
-        {/* <div style={{ height: "200vh" }} /> */}
       </Element>
 
       <Element name="quarto" id="element">
         <Climate />
-        {/* <div style={{ height: "200vh" }} /> */}
       </Element>
 
       <Element name="quinto" id="element">
         <Security />
-        {/* <div style={{ height: "200vh" }} /> */}
       </Element>
 
       <Element name="sexto" id="element">
         <ReformAndConstruction />
-        {/* <div style={{ height: "200vh" }} /> */}
+      </Element>
+
+      <Element name="sétimo" id="element">
+        <ReformAndConstruction />
       </Element>
 
     </main>

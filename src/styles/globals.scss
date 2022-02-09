@@ -9,6 +9,11 @@ body {
   scroll-snap-type: y mandatory;
 }
 
+.pin-spacer {
+  padding : 0px !important;
+  height : 800vh !important;
+}
+
 ::-webkit-scrollbar {
   width: 0px;
   height: 0px;
@@ -25,7 +30,8 @@ body {
 // }​
 
 .buttonNav {
-  background-color: white;
+  // background-color: white;
+  border: solid 1px gray;
 
   font-size: 0px;
   padding: 8px;
@@ -37,4 +43,3 @@ body {
   padding: 10px;
   background-color: gray !important;
 }
-
