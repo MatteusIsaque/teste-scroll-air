@@ -19,7 +19,7 @@ import { useEffect } from 'react'
 
 gsap.registerPlugin(ScrollTrigger, ScrollToPlugin)
 
-export default function index() {
+export default function Index() {
 
   const t1 = gsap.timeline()
 
