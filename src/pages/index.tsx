@@ -33,7 +33,7 @@ export default function Index() {
       scrollTrigger: {
         trigger: "#mainID",
         pin: true,
-        scrub: 1,
+        scrub: 0.4,
         snap: 1 / (elements.length - 1) + 0.002,
         // base vertical scrolling on how wide the container is so it feels more natural.
         end: "+=3500",
@@ -46,7 +46,7 @@ export default function Index() {
     //   toggleActions: "play play none reverse",
     //   animation: t1,
     //   start: altura + 2 + 1,
-    //   end: altura * 4,
+    //   end: altura * 4,'
     //   // markers: true
     // })
 
