@@ -1,4 +1,4 @@
-import styles from './../../styles/index/ReformAndConstruction.module.scss'
+import styles from './../../styles/index/reformAndConstruction.module.scss'
 
 export default function ReformAndConstruction() {
 
