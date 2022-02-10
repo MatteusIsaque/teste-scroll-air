@@ -16,7 +16,25 @@ export default function InteriorDesigner() {
 
   return (
     <section id="interiosDesignerMain" className={styles.main}>
-      <BoxInformation id="interiosDesignerMain" top="20vh" left="14vw" />
+      <BoxInformation
+        id="interiosDesignerMain"
+        buttonPosition={0}
+        textPosition={0}
+        top="20vh"
+        left="14vw"
+        leftText="40px"
+        text="ewquhr uiqwe uqwehrqiuwh iuqhwru qhufahsu fhausfh uehiaudshuh fquiwe hfuqiwehfquiwehfaiudshfquiw eui uq iweqfuqiwefuiwhfiuads uhwefiuqeua"
+      />
+      <BoxInformation
+        id="interiosDesignerMain"
+        buttonPosition={4}
+        textPosition={1}
+        bottom="20vh"
+        right="14vw"
+        rightText="40px"
+        alignText="end"
+        text="ewquhr uiqwe uqwehrqiuwh iuqhwru qhufahsu fhausfh uehiaudshuh fquiwe hfuqiwehfquiwehfaiudshfquiw eui uq iweqfuqiwefuiwhfiuads uhwefiuqeua"
+      />
     </section>
   )
 }

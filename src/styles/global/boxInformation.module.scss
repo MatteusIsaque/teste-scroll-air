@@ -4,6 +4,15 @@
   width: 30px;
 
   cursor: pointer;
+
+  .information {
+    width: 500px;
+
+    color: white;
+    position: absolute;
+    display: none;
+  }
+
   .majorLine {
     width: 30px;
     height: 30px;

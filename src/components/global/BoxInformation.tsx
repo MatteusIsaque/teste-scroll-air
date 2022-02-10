@@ -2,40 +2,52 @@ import { useEffect } from 'react'
 import styles from './../../styles/global/boxInformation.module.scss'
 
 type DadBoxInformation = {
+  id?: any
+  buttonPosition: any
+  textPosition: any
+
   top?: string
   left?: string
   right?: string
   bottom?: string
-  id?: any
+
+  text?: string
+
+  leftText?: string
+  rightText?: string
+  bottomText?: string
+  topText?: string
+  alignText?: any
+
 }
 
-export default function BoxInformation({ top, left, right, bottom, id }: DadBoxInformation) {
+export default function BoxInformation({ id, buttonPosition, textPosition, top, left, right, bottom, leftText, rightText, bottomText, topText, alignText, text }: DadBoxInformation) {
 
   useEffect(() => {
     const itens: any = document.querySelectorAll('#serviceInformationButton')
     const BackgroundItem: any = document.querySelector(`#${id}`)
+    const serviceInformationText: any = document.querySelectorAll('#serviceInformationText')
 
+    itens[buttonPosition].addEventListener('mouseover', function () {
 
-
-    itens[0].addEventListener('mouseover', function () {
-
-      BackgroundItem.style.filter = "brightness(80%)"
+      serviceInformationText[textPosition].style.display = "block"
+      BackgroundItem.style.filter = "brightness(90%)"
 
       itens.forEach((i: any) => {
-        console.log(i)
         i.style.animationPlayState = 'paused'
       })
     })
 
-    itens[0].addEventListener('mouseout', function () {
-      BackgroundItem.style.filter = "brightness(100%)"
+    itens[buttonPosition].addEventListener('mouseout', function () {
+      serviceInformationText[textPosition].style.display = "none"
+      BackgroundItem.style.backdropFilter = "brightness(100%)"
 
       // window.alert('saiu')
       itens.forEach((i: any) => {
-        console.log(i)
         i.style.animationPlayState = 'running'
       })
     })
+
   }, [])
 
   return (
@@ -43,8 +55,8 @@ export default function BoxInformation({ top, left, right, bottom, id }: DadBoxI
       <div id="serviceInformationButton" className={styles.majorLine}>
         <div id="serviceInformationButton" className={styles.minorRow} ></div>
       </div>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore adipisci quaerat perspiciatis, aspernatur natus at dolorum aut. Sequi distinctio officiis cumque tenetur, illum vitae, neque velit ratione deserunt, debitis sed!
+      <p id="serviceInformationText" className={styles.information} style={{ left: leftText, right: rightText, bottom: bottomText, top: topText, textAlign: alignText }}>
+        {text}
       </p>
     </div>
   )
