@@ -24,8 +24,6 @@ export default function Index() {
   useEffect(() => {
     const elements: any = gsap.utils.toArray('#element')
 
-    console.log(elements.length - 1)
-
     gsap.to(elements, {
       yPercent: - 100 * (elements.length - 1),
       ease: "none",
@@ -34,8 +32,6 @@ export default function Index() {
         pin: true,
         scrub: 0.5,
         snap: 1 / (elements.length - 1) + 0.002,
-        // base vertical scrolling on how wide the container is so it feels more natural.
-
       }
     });
   }, [])
