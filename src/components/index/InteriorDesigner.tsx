@@ -1,5 +1,5 @@
 import styles from './../../styles/index/interiorDesigner.module.scss'
-import BoxInformation from '../global/boxInformation'
+import BoxInformation from './../global/BoxInformation'
 
 import { ScrollTrigger } from 'gsap/dist/ScrollTrigger'
 import { gsap } from 'gsap'
