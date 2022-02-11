@@ -3,6 +3,7 @@ import styles from './../../styles/global/boxInformation.module.scss'
 
 type DadBoxInformation = {
   id?: any
+  idButton?: any,
   buttonPosition: any
   textPosition: any
 
@@ -28,6 +29,8 @@ export default function BoxInformation({ id, buttonPosition, textPosition, top, 
     const BackgroundItem: any = document.querySelector(`#${id}`)
     const serviceInformationText: any = document.querySelectorAll('#serviceInformationText')
 
+    window.console.log(itens)
+
     itens[buttonPosition].addEventListener('mouseover', function () {
 
       serviceInformationText[textPosition].style.display = "block"
@@ -40,7 +43,7 @@ export default function BoxInformation({ id, buttonPosition, textPosition, top, 
 
     itens[buttonPosition].addEventListener('mouseout', function () {
       serviceInformationText[textPosition].style.display = "none"
-      BackgroundItem.style.backdropFilter = "brightness(100%)"
+      BackgroundItem.style.filter = "brightness(100%)"
 
       // window.alert('saiu')
       itens.forEach((i: any) => {
@@ -51,9 +54,9 @@ export default function BoxInformation({ id, buttonPosition, textPosition, top, 
   }, [])
 
   return (
-    <div id="serviceInformationButton" className={styles.main} style={{ top: top, left: left, right: right, bottom: bottom }}>
-      <div id="serviceInformationButton" className={styles.majorLine}>
-        <div id="serviceInformationButton" className={styles.minorRow} ></div>
+    <div id='serviceInformationButton' className={styles.main} style={{ top: top, left: left, right: right, bottom: bottom }}>
+      <div id='serviceInformationButton' className={styles.majorLine}>
+        <div id='serviceInformationButton' className={styles.minorRow} ></div>
       </div>
       <p id="serviceInformationText" className={styles.information} style={{ left: leftText, right: rightText, bottom: bottomText, top: topText, textAlign: alignText }}>
         {text}

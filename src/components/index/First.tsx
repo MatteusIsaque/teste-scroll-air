@@ -10,9 +10,6 @@ import Image from 'next/image'
 gsap.registerPlugin(ScrollTrigger)
 
 
-const title = gsap.timeline()
-
-
 export default function First() {
 
   useEffect(() => {
@@ -23,21 +20,12 @@ export default function First() {
       duration: 0.75,
     })
 
-
-    ScrollTrigger.create({
-      animation: title,
-      start: "200px",
-      end: "+=400",
-      toggleActions: "pause none reverse reverse"
-    })
-
   }, [])
 
 
   return (
     <section id="main" className={styles.main}>
       <div className={styles.message} id="message">
-        {/* <Image src={Title} /> */}
         <h1 className={styles.title}>
           CONCEITU AIR TECH
           <span>®</span>

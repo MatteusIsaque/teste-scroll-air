@@ -11,6 +11,29 @@ gsap.registerPlugin(ScrollTrigger)
 export default function InteriorDesigner() {
   useEffect(() => {
 
+    const buttons: any = gsap.utils.toArray('#serviceInformationButton')
+    const height = window.innerHeight
+
+
+    gsap.to(buttons[0], {
+      opacity: 1,
+      duration: 1,
+      scrollTrigger: {
+        start: `0px 0px`,
+        end: `${height * 2.8}px ${height / 1.2}`,
+        toggleActions: "restart reset restart none",
+      }
+    })
+
+    gsap.to(buttons[3], {
+      opacity: 1,
+      duration: 1,
+      scrollTrigger: {
+        start: `0px 0px`,
+        end: `${height * 2.8}px ${height / 1.2}`,
+        toggleActions: "restart reset restart none",
+      }
+    })
 
   }, [])
 
