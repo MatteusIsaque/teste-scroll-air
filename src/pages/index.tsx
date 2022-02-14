@@ -10,9 +10,11 @@ import Climate from '../components/index/Climate';
 import Security from '../components/index/Security';
 import ReformAndConstruction from '../components/index/ReformAndConstruction';
 
-import { ScrollTrigger } from 'gsap/dist/ScrollTrigger'
-
 import gsap from 'gsap'
+import { ScrollTrigger } from 'gsap/dist/ScrollTrigger'
+import { AiOutlineInstagram, AiOutlineFacebook, AiOutlineWhatsApp } from 'react-icons/ai'
+
+import { BsArrowDown } from 'react-icons/bs'
 
 import { useEffect } from 'react'
 
@@ -25,13 +27,13 @@ export default function Index() {
     const elements: any = gsap.utils.toArray('#element')
 
     gsap.to(elements, {
-      yPercent: - 100 * (elements.length - 1),
+      yPercent: - 50 * (elements.length - 1),
       ease: "none",
       scrollTrigger: {
         trigger: "#mainID",
         pin: true,
         scrub: 0.5,
-        snap: 1 / (elements.length - 1) + 0.002,
+        snap: 2 / (elements.length - 1) + 0.002,
       }
     });
   }, [])
@@ -40,7 +42,16 @@ export default function Index() {
 
   return (
     <main id="mainID" className={styles.main}>
+
       <nav className={styles.nav}>
+        <div className={styles.social}>
+          <AiOutlineInstagram />
+          <span />
+          <AiOutlineFacebook />
+          <span />
+          <AiOutlineWhatsApp />
+        </div>
+
         <ul>
           <li>
             <Link activeClass='active' className="buttonNav" to="primeiro" spy={true} smooth={true}>
@@ -78,6 +89,10 @@ export default function Index() {
             </Link>
           </li>
         </ul>
+
+        <div className={styles.arrow}>
+          <BsArrowDown />
+        </div>
       </nav>
 
       <Element name='primeiro' id="element">

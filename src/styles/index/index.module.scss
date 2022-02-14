@@ -2,31 +2,54 @@
   .nav {
     position: fixed;
     right: 0px;
-    height: 100vh;
+    height: 90vh;
     width: 8vw;
+    padding: 5vh 0px;
 
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     flex-direction: column;
 
     z-index: 9999;
 
+    .arrow {
+      svg {
+        position: fixed;
+        top: 90vh;
+
+        fill: white;
+        // height: 1.25rem;
+        // width: 1.25rem;
+
+        animation: animaArrow 2s infinite;
+      }
+    }
+
+    .social {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+
+      span {
+        height: 20px;
+      }
+
+      svg {
+        fill: white;
+
+        height: 1.5rem;
+        width: 1.5rem;
+      }
+    }
+
     ul {
       li {
         display: flex;
         align-items: center;
-        justify-content: center;
+        justify-content: flex-end;
 
         list-style: none;
-
-        background-color: transparent;
-
-
-        font-size: 10px;
-        margin: 10px 0px;
-        border-radius: 50%;
-        cursor: pointer;
       }
     }
   }

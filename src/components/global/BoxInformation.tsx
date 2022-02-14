@@ -29,8 +29,6 @@ export default function BoxInformation({ id, buttonPosition, textPosition, top, 
     const BackgroundItem: any = document.querySelector(`#${id}`)
     const serviceInformationText: any = document.querySelectorAll('#serviceInformationText')
 
-    window.console.log(itens)
-
     itens[buttonPosition].addEventListener('mouseover', function () {
 
       serviceInformationText[textPosition].style.display = "block"

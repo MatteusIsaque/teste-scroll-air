@@ -1,8 +1,12 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700;800;900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700;800;900&display=swap");
 * {
   padding: 0;
   margin: 0;
   font-family: Montserrat;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: always;
+  -moz-osx-font-smoothing: always;
+  font-smooth: always;
 }
 
 :root {
@@ -30,16 +34,23 @@
 // }​
 
 .buttonNav {
-  // background-color: white;
-  border: solid 1px gray;
+  background-color: white;
+  height: 2px;
+  padding: 10px 0px;
+
+  cursor: pointer;
 
   font-size: 0px;
-  padding: 8px;
-  margin: 4px;
-  border-radius: 50%;
+  padding: 0px;
+  width: 30px;
+  margin: 10px;
+  transition: 1s;
+
+  
 }
 
 .active {
-  padding: 10px;
-  background-color: gray !important;
+  width: 50px;
+
+  transition: 1s;
 }

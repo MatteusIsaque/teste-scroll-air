@@ -48,11 +48,11 @@ export default function Security() {
 
   return (
     <section id="securityMain" className={styles.main}>
-      <BoxInformation id="securityMain" buttonPosition={15} textPosition={5} left="10vw" top="40vh" text="wqeqweq we qwiei qewui fiewquh uiqwehf uiwqe iquewh" leftText='20px' alignText='end' />
+      <BoxInformation id="securityMain" buttonPosition={15} textPosition={5} left="10vw" bottom="40vh" text="wqeqweq we qwiei qewui fiewquh uiqwehf uiwqe iquewh" leftText='20px' alignText='end' />
 
-      <BoxInformation id="securityMain" buttonPosition={18} textPosition={6} left="40vw" bottom="34vh" text="wqeqweq we qwiei qewui fiewquh uiqwehf uiwqe iquewh" leftText='20px' alignText='end' />
+      <BoxInformation id="securityMain" buttonPosition={18} textPosition={6} left="45vw" bottom="40vh" text="wqeqweq we qwiei qewui fiewquh uiqwehf uiwqe iquewh" leftText='20px' alignText='end' />
 
-      <BoxInformation id="securityMain" buttonPosition={21} textPosition={7} right="16vw" bottom="50vh" text="wqeqweq we qwiei qewui fiewquh uiqwehf uiwqe iquewh" rightText='40px' alignText='end' />
+      <BoxInformation id="securityMain" buttonPosition={21} textPosition={7} right="16vw" bottom="40vh" text="wqeqweq we qwiei qewui fiewquh uiqwehf uiwqe iquewh" rightText='40px' alignText='end' />
     </section>
   )
 }

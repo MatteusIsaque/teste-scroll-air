@@ -4,20 +4,24 @@ import styles from './../../styles/index/first.module.scss'
 import { gsap } from 'gsap'
 import { ScrollTrigger } from 'gsap/dist/ScrollTrigger'
 
-import Title from './../../svg/CONCEITU_AIR_TECH.svg'
-import Image from 'next/image'
-
 gsap.registerPlugin(ScrollTrigger)
 
 
 export default function First() {
-
   useEffect(() => {
+
+    const windowHeight = window.innerHeight
 
     gsap.to('#message', {
       paddingTop: "40vh",
       opacity: 1,
-      duration: 0.75,
+      duration: 1.25,
+      scrollTrigger: {
+        start: `-${windowHeight / 10} 0`,
+        end: `${windowHeight / 1.25}`,
+        markers: true,
+        toggleActions: 'play complete restart restart'
+      }
     })
 
   }, [])

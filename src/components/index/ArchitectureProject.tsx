@@ -12,7 +12,6 @@ export default function ArchitectureProject() {
     const buttons: any = gsap.utils.toArray('#serviceInformationButton')
     const height = window.innerHeight
 
-
     gsap.to(buttons[9], {
       opacity: 1,
       duration: 1,
