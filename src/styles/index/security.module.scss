@@ -1,29 +1,25 @@
 .main {
-  // background-image: url(./../../image/quinto.jpg);
-  // background-size: cover;
-  // background-position: center;
-  // background-repeat: no-repeat;
-
   height: 100vh;
   width: 100vw;
-
+  
   position: relative;
 
   display: flex;
   .fence {
     clip-path: polygon(0 0, 35% 0, 20% 100%, 0% 100%);
 
-    position: absolute;
-    left: 0px;
-    bottom: 0px;
-
+  
     background-image: url(./../../image/farpa.jpg);
     background-size: auto;
     background-position: left;
     background-repeat: no-repeat;
-
-    width: 100% !important;
+    
+    width: 100%;
     height: 100vh;
+
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
 
     transition: 1;
 
@@ -34,8 +30,8 @@
 
   .camera {
     clip-path: polygon(35% 0, 74% 0, 60% 100%, 20% 100%);
-    background-image: url(./../../image/camera.jpg);
 
+    background-image: url(./../../image/camera.jpg);
     background-size: auto;
     background-position: center;
     background-repeat: no-repeat;
@@ -43,7 +39,7 @@
     height: 100vh;
     width: 100%;
 
-    position: relative;
+    position: absolute;
     transition: 1s;
 
     &:hover {
