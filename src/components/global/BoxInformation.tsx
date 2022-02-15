@@ -2,6 +2,7 @@ import { useEffect } from 'react'
 import styles from './../../styles/global/boxInformation.module.scss'
 
 import gsap from 'gsap'
+import { setTimeout } from 'timers'
 
 type DadBoxInformation = {
   id?: any
@@ -32,6 +33,7 @@ export default function BoxInformation({ id, buttonPosition, textPosition, top, 
     const itens: any = document.querySelectorAll('#serviceInformationButton')
     const BackgroundItem: any = document.querySelector(`#${id}`)
     const serviceInformationText: any = document.querySelectorAll('#serviceInformationText')
+    const tl = gsap.timeline()
 
     itens[buttonPosition].addEventListener('mouseover', function () {
 
@@ -44,7 +46,6 @@ export default function BoxInformation({ id, buttonPosition, textPosition, top, 
     })
 
     itens[buttonPosition].addEventListener('mouseout', function () {
-
 
       serviceInformationText[textPosition].style.display = 'none'
       BackgroundItem.style.filter = "brightness(100%)"

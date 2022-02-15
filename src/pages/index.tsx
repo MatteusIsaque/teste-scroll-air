@@ -17,6 +17,7 @@ import { AiOutlineInstagram, AiOutlineFacebook, AiOutlineWhatsApp } from 'react-
 import { BsArrowDown } from 'react-icons/bs'
 
 import { useEffect } from 'react'
+import End from '../components/index/End';
 
 gsap.registerPlugin(ScrollTrigger)
 
@@ -156,7 +157,7 @@ export default function Index() {
       </Element>
 
       <Element name="sétimo" id="element">
-        <ReformAndConstruction />
+        <End />
       </Element>
 
     </main>
