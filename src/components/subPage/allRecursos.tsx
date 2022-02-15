@@ -6,7 +6,7 @@ import InfoAllRecursos from './infoAllRecursos'
 type AllRecursosType = {
   title: string
   subTitle: string
-  imageItem: any
+  imageItem?: any
 }
 
 export default function AllRecursos({ title, subTitle, imageItem }: AllRecursosType) {
