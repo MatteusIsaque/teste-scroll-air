@@ -10,6 +10,9 @@ gsap.registerPlugin(ScrollTrigger)
 export default function Security() {
 
   useEffect(() => {
+
+    console.log(`seu monitor tem ${window.innerHeight} de altura`)
+
     const buttons: any = gsap.utils.toArray('#serviceInformationButton')
     const height = window.innerHeight
 
