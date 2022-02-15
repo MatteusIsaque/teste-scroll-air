@@ -4,6 +4,7 @@ import styles from './../../styles/global/boxInformation.module.scss'
 type DadBoxInformation = {
   id?: any
   idButton?: any,
+
   buttonPosition: any
   textPosition: any
 
@@ -19,10 +20,11 @@ type DadBoxInformation = {
   bottomText?: string
   topText?: string
   alignText?: any
+  delayCreateText?: boolean
 
 }
 
-export default function BoxInformation({ id, buttonPosition, textPosition, top, left, right, bottom, leftText, rightText, bottomText, topText, alignText, text }: DadBoxInformation) {
+export default function BoxInformation({ id, buttonPosition, textPosition, top, left, right, bottom, leftText, rightText, bottomText, topText, alignText, text, delayCreateText }: DadBoxInformation) {
 
   useEffect(() => {
     const itens: any = document.querySelectorAll('#serviceInformationButton')

@@ -10,29 +10,24 @@ gsap.registerPlugin(ScrollTrigger)
 export default function Security() {
 
   useEffect(() => {
-
-    window.alert(`seu monitor tem ${window.innerHeight} de altura`)
-
     const buttons: any = gsap.utils.toArray('#serviceInformationButton')
     const height = window.innerHeight
 
-
-    animaBG(buttons[15], 'fence', 'polygon(0 0, 40% 0, 40% 100%, 0% 100%)', 'polygon(0 0, 35% 0, 20% 100%, 0% 100%)')
-
     function animaBG(itemHover: any, Bg: string, clipPathHover: string, clipPathLeave: string) {
-
       const IDbg: any = document.getElementById(Bg)
-
+      
       itemHover.addEventListener('mouseover', function () {
         IDbg.style.clipPath = `${clipPathHover}`
         IDbg.style.zIndex = '999999'
       })
-
+      
       itemHover.addEventListener('mouseleave', function () {
         IDbg.style.clipPath = `${clipPathLeave}`
         IDbg.style.zIndex = '1'
       })
     }
+
+    animaBG(buttons[15], 'fence', 'polygon(0 0, 40% 0, 40% 100%, 0% 100%)', 'polygon(0 0, 35% 0, 20% 100%, 0% 100%)')
 
     gsap.to(buttons[15], {
       opacity: 1,
