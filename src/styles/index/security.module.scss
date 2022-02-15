@@ -1,11 +1,77 @@
-.main{
-  background-image: url(./../../image/quinto.jpg);
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  
-  height:100vh;
-  width:100vw;
-  
+.main {
+  // background-image: url(./../../image/quinto.jpg);
+  // background-size: cover;
+  // background-position: center;
+  // background-repeat: no-repeat;
+
+  height: 100vh;
+  width: 100vw;
+
   position: relative;
+
+  display: flex;
+  .fence {
+    clip-path: polygon(0 0, 35% 0, 20% 100%, 0% 100%);
+
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+
+    background-image: url(./../../image/farpa.jpg);
+    background-size: auto;
+    background-position: left;
+    background-repeat: no-repeat;
+
+    width: 100% !important;
+    height: 100vh;
+
+    transition: 1;
+
+    &:hover {
+      transition: 1s;
+    }
+  }
+
+  .camera {
+    clip-path: polygon(35% 0, 74% 0, 60% 100%, 20% 100%);
+    background-image: url(./../../image/camera.jpg);
+
+    background-size: auto;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    height: 100vh;
+    width: 100%;
+
+    position: relative;
+    transition: 1s;
+
+    &:hover {
+      transition: 1s;
+    }
+  }
+  .lock {
+    clip-path: polygon(74% 0, 100% 0, 100% 100%, 59% 100%);
+    background-image: url(./../../image/porta.jpg);
+
+    background-size: auto;
+    background-position: right;
+    background-repeat: no-repeat;
+
+    height: 100%;
+    width: 100%;
+
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+    transition: 1s;
+
+    &:hover {
+      transition: 1s;
+    }
+  }
 }
+
+// @keyframes  animaCan {
+
+// }

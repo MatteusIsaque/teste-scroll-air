@@ -26,14 +26,50 @@ export default function Index() {
   useEffect(() => {
     const elements: any = gsap.utils.toArray('#element')
 
+    const height = window.innerHeight
+
+
+    // const tl = gsap.timeline()
+
+    // console.log(elements.length)
+
+    // tl.to(elements[0], {
+    //   yPercent: - 100
+    // })
+    // tl.to(elements[1], {
+    //   yPercent: - 100
+    // })
+    // tl.to(elements[2], {
+    //   yPercent: - 100
+    // })
+    // tl.to(elements[3], {
+    //   yPercent: - 100
+    // })
+    // tl.to(elements[4], {
+    //   yPercent: - 100
+    // })
+
+    // ScrollTrigger.create({
+    //     trigger: "#mainID",
+    //     // end: `${height * elements.length - 1}`,
+    //     pin: true,
+    //     start: "-10px top",
+    //     end:"+=3500",
+    //     scrub: 1,
+    //     snap: 1 / (elements.length - 1) + 0.002,
+
+    // })
+
     gsap.to(elements, {
-      yPercent: - 50 * (elements.length - 1),
+      yPercent: - 100 * (elements.length - 1),
+      // animation: tl,
       ease: "none",
       scrollTrigger: {
         trigger: "#mainID",
+        end: `${height * elements.length - 1}`,
         pin: true,
-        scrub: 0.5,
-        snap: 2 / (elements.length - 1) + 0.002,
+        scrub: 1,
+        snap: 1 / (elements.length - 1) + 0.002,
       }
     });
   }, [])

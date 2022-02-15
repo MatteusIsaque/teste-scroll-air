@@ -1,0 +1,39 @@
+.main {
+  .greenDiv {
+    background-color: var(--green-dark);
+    height: 50px;
+    width: 100%;
+  }
+
+  h3 {
+    margin: 60px 10% 0px;
+
+    text-align: center;
+
+    font-size: 2.5rem;
+    color: var(--blue-dark);
+  }
+
+  .questions {
+    margin: 80px 10%;
+  }
+  .cotaçãoButton {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  
+    padding: 30px 0px;
+    button {
+      box-shadow: 2px 1000px 1px var(--blue-dark) inset;
+      border-radius: 6px;
+
+      color: var(--gray-200);
+      font-weight: 800;
+      font-size: 16px;
+
+      width: 340px;
+      height: 45px;
+      font-family: "Montserrat";
+    }
+  }
+}

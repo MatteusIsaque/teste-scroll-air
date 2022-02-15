@@ -6,17 +6,16 @@
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: always;
   -moz-osx-font-smoothing: always;
-  font-smooth: always;
 }
 
 :root {
   --font-white: white;
 }
 
-.pin-spacer {
-  padding: 0px !important;
-  max-height: 800vh !important;
-}
+// .pin-spacer {
+//   padding: 0px !important;
+//   max-height: 1200vh !important;
+// }
 
 ::-webkit-scrollbar {
   width: 0px;

@@ -1,0 +1,36 @@
+.main {
+  background-image: url(../../img/subPages/banner-rodativo.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+
+  margin-top: 120px;
+
+  height: 350px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  p {
+    font-size: 1rem;
+    padding: 20px 0px;
+
+    max-width: 700px;
+    text-align: center;
+    color: var(--gray-200);
+  }
+
+  button {
+    box-shadow: 2px 1000px 1px var(--blue-dark) inset;
+    border-radius: 6px;
+
+    color: var(--gray-200);
+    font-weight: 800;
+    font-size: 16px;
+
+    height: 45px;
+    font-family: "Montserrat";
+  }
+}
