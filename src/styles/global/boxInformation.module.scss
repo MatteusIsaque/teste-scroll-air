@@ -13,6 +13,10 @@
     color: white;
     position: absolute;
     display: none;
+
+    animation-name: goText;
+    animation-duration: 1s;
+    animation-timing-function: linear;
   }
 
   .majorLine {

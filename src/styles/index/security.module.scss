@@ -1,20 +1,28 @@
+.divText{
+  position: absolute;
+  text-align: center;
+
+  margin: 12vw 30vw 0px 20vw;
+
+  z-index: 9999999;
+  color: var(--font-white);
+}
+
 .main {
   height: 100vh;
   width: 100vw;
 
-  
   position: relative;
 
-  display: flex;
+
   .fence {
     clip-path: polygon(0 0, 35% 0, 20% 100%, 0% 100%);
 
-  
     background-image: url(./../../image/cerca-e-trava.jpg);
     background-size: cover;
     background-position: left;
     background-repeat: no-repeat;
-    
+
     width: 100%;
     height: 100vh;
 
@@ -22,10 +30,9 @@
     left: 0px;
     bottom: 0px;
 
-    transition: 1;
-
+    transition: 2;
     &:hover {
-      transition: 1s;
+      transition: 2s;
     }
   }
 
@@ -68,7 +75,3 @@
     }
   }
 }
-
-// @keyframes  animaCan {
-
-// }

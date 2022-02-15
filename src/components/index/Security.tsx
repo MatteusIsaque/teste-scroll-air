@@ -15,13 +15,30 @@ export default function Security() {
 
     function animaBG(itemHover: any, Bg: string, clipPathHover: string, clipPathLeave: string) {
       const IDbg: any = document.getElementById(Bg)
-      
+      const IDMainTextSection: any = document.querySelector('#divText')
+
+      // console.log()
+
       itemHover.addEventListener('mouseover', function () {
+
+        gsap.to('#divText',
+          {
+            opacity: 0,
+            duration: 1
+          })
+
         IDbg.style.clipPath = `${clipPathHover}`
-        IDbg.style.zIndex = '999999'
+        IDbg.style.zIndex = '100'
       })
-      
+
       itemHover.addEventListener('mouseleave', function () {
+        gsap.to('#divText',
+          {
+            opacity: 1,
+            duration: 1
+          })
+
+
         IDbg.style.clipPath = `${clipPathLeave}`
         IDbg.style.zIndex = '1'
       })
@@ -67,18 +84,24 @@ export default function Security() {
   }, [])
 
   return (
-    <section id="securityMain" className={styles.main}>
-      <div id="fence" className={styles.fence}>
-        <BoxInformation id="securityMain" buttonPosition={15} textPosition={5} left="10vw" bottom="40vh" text="wqeqweq we qwiei qewui fiewquh uiqwehf uiwqe iquewh" leftText='20px' alignText='end' />
+    <>
+      <div id="divText" className={styles.divText}>
+        <div className={styles.text}>
+          <h1>TITULO</h1>
+          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aut esse ipsum necessitatibus vitae asperiores dicta officia hic eveniet, non numquam sunt adipisci dolore accusantium enim libero quia excepturi vel error.</p>
+        </div>
       </div>
-      <div id="camera" className={styles.camera}>
-        <BoxInformation id="securityMain" buttonPosition={18} textPosition={6} left="45vw" bottom="40vh" text="wqeqweq we qwiei qewui fiewquh uiqwehf uiwqe iquewh" leftText='20px' alignText='end' />
-      </div>
-      <div id="lock" className={styles.lock}>
-        <BoxInformation id="securityMain" buttonPosition={21} textPosition={7} right="16vw" bottom="40vh" text="wqeqweq we qwiei qewui fiewquh uiqwehf uiwqe iquewh" rightText='40px' alignText='end' />
-      </div>
-
-
-    </section>
+      <section id="securityMain" className={styles.main} >
+        <div id="fence" className={styles.fence}>
+          <BoxInformation id="securityMain" buttonPosition={15} textPosition={5} left="10vw" bottom="40vh" text="wqeqweq we qwiei qewui fiewquh uiqwehf uiwqe iquewh" leftText='20px' alignText='end' />
+        </div>
+        <div id="camera" className={styles.camera}>
+          <BoxInformation id="securityMain" buttonPosition={18} textPosition={6} left="45vw" bottom="40vh" text="wqeqweq we qwiei qewui fiewquh uiqwehf uiwqe iquewh" leftText='20px' alignText='end' />
+        </div>
+        <div id="lock" className={styles.lock}>
+          <BoxInformation id="securityMain" buttonPosition={21} textPosition={7} right="16vw" bottom="40vh" text="wqeqweq we qwiei qewui fiewquh uiqwehf uiwqe iquewh" rightText='40px' alignText='end' />
+        </div>
+      </section >
+    </>
   )
 }

@@ -1,6 +1,8 @@
 import { useEffect } from 'react'
 import styles from './../../styles/global/boxInformation.module.scss'
 
+import gsap from 'gsap'
+
 type DadBoxInformation = {
   id?: any
   idButton?: any,
@@ -42,10 +44,11 @@ export default function BoxInformation({ id, buttonPosition, textPosition, top, 
     })
 
     itens[buttonPosition].addEventListener('mouseout', function () {
-      serviceInformationText[textPosition].style.display = "none"
+
+
+      serviceInformationText[textPosition].style.display = 'none'
       BackgroundItem.style.filter = "brightness(100%)"
 
-      // window.alert('saiu')
       itens.forEach((i: any) => {
         i.style.animationPlayState = 'running'
       })
