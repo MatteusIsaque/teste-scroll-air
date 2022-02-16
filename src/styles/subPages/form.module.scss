@@ -18,16 +18,16 @@
     font-family: "Poppins";
   }
 
-  .name{
+  .name {
     height: 28px;
     width: 100%;
 
     border-radius: 6px;
     margin-bottom: 6px;
-    padding: 8px;
+    // padding: 8px;
   }
 
-  p{
+  p {
     margin: 20px 0px;
   }
 
@@ -39,7 +39,7 @@
     padding: 8px;
 
     margin-top: 8px;
-    outline: none
+    outline: none;
   }
 
   .radio {
@@ -56,40 +56,25 @@
     height: 50px;
 
     box-shadow: 2px 1000px 1px var(--blue-dark) inset;
-    
+
     color: var(--gray-200);
     font-weight: 800;
     font-size: 16px;
 
-    font-family:"Montserrat";
+    font-family: "Montserrat";
   }
 }
 
 .divForm {
   display: flex;
-  width: 100%;
+
   div {
-    display: flex;
-    flex-direction: column;
 
-    width: 100%;
+    input{
+      margin: 6px 0px;
+      padding: 4px;
 
-    &:first-child {
-      margin-right: 8px;
-    }
-
-    &:last-child {
-      margin-left: 8px;
-    }
-
-    input {
       width: 100%;
-
-      height: 28px;
-      margin: 8px 0px;
-      padding: 8px;
-
-      border-radius: 6px;
     }
   }
 }

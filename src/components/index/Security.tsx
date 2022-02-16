@@ -93,7 +93,7 @@ export default function Security() {
       </div>
       <section id="securityMain" className={styles.main} >
         <div id="fence" className={styles.fence}>
-          <BoxInformation id="securityMain" buttonPosition={15} textPosition={5} left="10vw" bottom="40vh" text="wqeqweq we qwiei qewui fiewquh uiqwehf uiwqe iquewh" leftText='20px' alignText='end' />
+          <BoxInformation id="securityMain" buttonPosition={15} textPosition={5} left="10vw" bottom="40vh" text="wqeqweq we qwiei qewui fiewquh uiqwehf uiwqe iquewh" leftText='20px' MaxWidthText={300} alignText='end' />
         </div>
         <div id="camera" className={styles.camera}>
           <BoxInformation id="securityMain" buttonPosition={18} textPosition={6} left="45vw" bottom="40vh" text="wqeqweq we qwiei qewui fiewquh uiqwehf uiwqe iquewh" leftText='20px' alignText='end' />

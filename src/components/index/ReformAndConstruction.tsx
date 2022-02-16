@@ -80,20 +80,29 @@ export default function ReformAndConstruction() {
   }, [])
 
   return (
-    <section id="reformaAndConstruction" className={styles.main}>
-
-      <div id="reform" className={styles.reform}>
-        <BoxInformation id="reformaAndConstruction" buttonPosition={24} textPosition={8} left="12vw" bottom="28vh" text="wqeqweq we qwiei qewui fiewquh uiqwehf uiwqe iquewh" leftText='20px' alignText='end' />
+    <>
+      <div id="divText" className={styles.divText}>
+        <div className={styles.text}>
+          <h1>Reforma e Construção</h1>
+          <p>Conte com uma equipe multidisciplinar para desenvolver projetos completos e sob medida para você. Planejamos todos os detalhes de seus projetos sem dor de cabeça, descomplicando as etapas até a execução da obra e entrega.</p>
+        </div>
       </div>
 
-      <div id="reformTwo" className={styles.reformTwo}>
-        <BoxInformation id="reformaAndConstruction" buttonPosition={27} textPosition={9} left="48vw" bottom="28vh" text="wqeqweq we qwiei qewui fiewquh uiqwehf uiwqe iquewh" leftText='20px' alignText='end' />
-      </div>
+      <section id="reformaAndConstruction" className={styles.main}>
 
-      <div id="building" className={styles.building}>
-        <BoxInformation id="reformaAndConstruction" buttonPosition={30} textPosition={10} right="12vw" bottom="28vh" text="wqeqweq we qwiei qewui fiewquh uiqwehf uiwqe iquewh" rightText='40px' alignText='end' />
-      </div>
+        <div id="reform" className={styles.reform}>
+          <BoxInformation id="reformaAndConstruction" buttonPosition={24} textPosition={8} left="12vw" bottom="28vh" text="Reforma e construção" leftText='20px' topText='10px' alignText='end' MaxWidthText={200} textButton="CONHEÇA MAIS" />
+        </div>
 
-    </section>
+        <div id="reformTwo" className={styles.reformTwo}>
+          <BoxInformation id="reformaAndConstruction" buttonPosition={27} textPosition={9} left="48vw" bottom="28vh" text="wqeqweq we qwiei qewui fiewquh uiqwehf uiwqe iquewh" rightText='34px' alignText='end' textButton="Reforma e construção" MaxWidthText={400} />
+        </div>
+
+        <div id="building" className={styles.building}>
+          <BoxInformation id="reformaAndConstruction" buttonPosition={30} textPosition={10} right="12vw" bottom="28vh" text="wqeqweq we qwiei qewui fiewquh uiqwehf uiwqe iquewh" rightText='40px' textButton="Engenheiro eletricista" MaxWidthText={400} alignText='end' />
+        </div>
+
+      </section>
+    </>
   )
 }

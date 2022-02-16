@@ -1,14 +1,13 @@
-import AllRecursos from "./../components/subPage/allRecursos";
-import DadForm from "./../components/subPage/dadForm";
-import Logo from "./../components/subPage/logo";
-import Quotation from "./../components/subPage/quotation";
-import ReasosToMigrate from "./../components/subPage/reasonsToMigrate";
-import RecentQuestions from "./../components/subPage/recentQuestions";
-import Results from "./../components/subPage/results";
+import AllRecursos from "../components/subPage/allRecursos";
+import DadForm from "../components/subPage/dadForm";
+import Logo from "../components/subPage/logo";
+import Quotation from "../components/subPage/quotation";
+import ReasosToMigrate from "../components/subPage/reasonsToMigrate";
+import RecentQuestions from "../components/subPage/recentQuestions";
+import Results from "../components/subPage/results";
 
-// import Tel from './../../img/subPages/tel.jpg'
+export default function ProjetoDeArquitetura() {
 
-export default function comunicacaoEmpresarial() {
   return (
     <main>
       <Logo />

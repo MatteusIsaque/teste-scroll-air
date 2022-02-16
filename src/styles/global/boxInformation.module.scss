@@ -8,13 +8,23 @@
 
   z-index: 999999;
   .information {
-    width: 500px;
-
-    color: white;
-    position: absolute;
     display: none;
+    position: absolute;
+    color: white;
 
-    // opacity: 0;
+    button {
+      width: 90%;
+      margin-top: 10px;
+
+      background-color: transparent;
+      outline: var(--font-white) solid 1px;
+
+      color: var(--font-white);
+      border: none;
+      
+      padding: 8px 0px;
+      cursor: point;
+    }
   }
 
   .majorLine {

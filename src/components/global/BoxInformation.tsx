@@ -23,11 +23,13 @@ type DadBoxInformation = {
   bottomText?: string
   topText?: string
   alignText?: any
-  delayCreateText?: boolean
+  MaxWidthText?: number
 
+
+  textButton?: string
 }
 
-export default function BoxInformation({ id, buttonPosition, textPosition, top, left, right, bottom, leftText, rightText, bottomText, topText, alignText, text, delayCreateText }: DadBoxInformation) {
+export default function BoxInformation({ id, buttonPosition, textPosition, top, left, right, bottom, leftText, rightText, bottomText, topText, MaxWidthText, alignText, text, textButton }: DadBoxInformation) {
 
   useEffect(() => {
     const itens: any = document.querySelectorAll('#serviceInformationButton')
@@ -62,8 +64,9 @@ export default function BoxInformation({ id, buttonPosition, textPosition, top, 
       <div id='serviceInformationButton' className={styles.majorLine}>
         <div id='serviceInformationButton' className={styles.minorRow} ></div>
       </div>
-      <p id="serviceInformationText" className={styles.information} style={{ left: leftText, right: rightText, bottom: bottomText, top: topText, textAlign: alignText }}>
+      <p id="serviceInformationText" className={styles.information} style={{ left: leftText, right: rightText, bottom: bottomText, top: topText, width: MaxWidthText, textAlign: alignText }}>
         {text}
+        <button>{textButton}</button>
       </p>
     </div>
   )

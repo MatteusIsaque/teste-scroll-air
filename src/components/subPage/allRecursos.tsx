@@ -17,25 +17,25 @@ export default function AllRecursos({ title, subTitle, imageItem }: AllRecursosT
       <p>{subTitle}</p>
       <div className={styles.mainDiv}>
         <div>
-          <Image src={imageItem} />
+          {/* <Image src={imageItem} /> */}
         </div>
         <div>
           <InfoAllRecursos title="voz" text="PBX na nuvem
-Música de espera personalizável
-Editor do plano de discagem
-Chamadas internacionais"/>
+            Música de espera personalizável
+            Editor do plano de discagem
+            Chamadas internacionais"/>
           <InfoAllRecursos title="Gerenciamento de chamadas" text="PBX na nuvem
-Música de espera personalizável
-Editor do plano de discagem
-Chamadas internacionais" />
+            Música de espera personalizável
+            Editor do plano de discagem
+            Chamadas internacionais" />
           <InfoAllRecursos title="Call Center" text="Estratégias avançadas de toque
-Anúncio pré-chamada
-Filas ilimitadas de chamada
-Anúncio de tempo de espera"/>
+            Anúncio pré-chamada
+            Filas ilimitadas de chamada
+            Anúncio de tempo de espera"/>
           <InfoAllRecursos title="Videoconferência" text="Reuniões com até 250 participantes
-Até 25 feeds de vídeo em HD
-Compartilhamento de tela com um clique
-Salas de reuniões personalizadas"/>
+            Até 25 feeds de vídeo em HD
+            Compartilhamento de tela com um clique
+            Salas de reuniões personalizadas"/>
         </div>
       </div>
     </section>

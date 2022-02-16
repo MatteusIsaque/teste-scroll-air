@@ -36,7 +36,7 @@ export default function Form({ titleForm, subTitleForm }: dadForm) {
       <div className={styles.radio} style={{ marginBottom: "20px" }}>
         <input type="radio" value="concordo" required /> Concordo com os termos de uso e política de privacidade.
       </div>
-      <button style={{ backgroundColor:""}}>OBTER COTAÇÃO</button>
+      <button style={{ backgroundColor: "" }}>OBTER COTAÇÃO</button>
     </form>
   )
 }
