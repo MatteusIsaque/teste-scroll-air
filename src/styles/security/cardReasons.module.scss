@@ -1,5 +1,6 @@
 .main {
   height: 250px;
+  max-width: 250px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -14,6 +15,10 @@
   h3{
     font-size: 5rem;
 
+    color: var(--blue-dark);
+  }
+
+  p{
     color: var(--blue-dark);
   }
 }

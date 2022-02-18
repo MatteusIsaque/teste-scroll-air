@@ -13,7 +13,6 @@ import ReformAndConstruction from '../components/index/ReformAndConstruction';
 import gsap from 'gsap'
 import { ScrollTrigger } from 'gsap/dist/ScrollTrigger'
 import { AiOutlineInstagram, AiOutlineFacebook, AiOutlineWhatsApp } from 'react-icons/ai'
-
 import { BsArrowDown } from 'react-icons/bs'
 
 import { useEffect } from 'react'

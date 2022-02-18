@@ -10,6 +10,17 @@
 
 :root {
   --font-white: white;
+  --blue-dark: #0b1654;
+  --blue-light: #58d9e5;
+}
+
+h1{
+  font-size: 2.4rem;
+  font-weight: 800;
+}
+
+h2{
+  font-size: 2rem;
 }
 
 // .pin-spacer {
@@ -52,3 +63,14 @@
   transition: 1s;
 }
 
+// #climatização{
+//   background-image: url(./../image/subPages/ar-condicionado.jpg)
+// }
+
+// #cotaçãoDivClimatização{
+//   background-image: url(./../image/subPages/ar-condicionado-dividir.jpg);
+// }
+
+// #allRecursos{
+//   margin-top: 140px;
+// }

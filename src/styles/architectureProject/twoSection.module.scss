@@ -1,0 +1,52 @@
+.main {
+  margin: 35vh 10% 24vh 10%;
+
+  h1 {
+    text-align: center;
+  }
+
+  p {
+    text-align: center;
+    margin: 0vh 0px 10vh 0px;
+  }
+
+  .textDiv {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    .text {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding-bottom: 4px;
+
+      h2 {
+        margin-bottom: 40px;
+      }
+
+      p {
+        margin: 0px 0px 10px 0px;
+        text-align: start;
+      }
+
+      button {
+        padding: 14px 0px;
+        margin-top: 40px;
+
+        background-color: #7d5d50;
+        border: 0px;
+
+        font-size: 1.5rem;
+        font-weight: 700;
+        color: var(--font-white);
+        cursor: pointer;
+        transition: 0.5s;
+
+        &:hover {
+          filter: brightness(0.8);
+          transition: 0.5s;
+        }
+      }
+    }
+  }
+}

@@ -2,17 +2,19 @@ import styles from './../../styles/subPages/dadForm.module.scss'
 
 import Form from './form'
 
+import arCondicionado from './../../image/subPages/ar-condicionado.jpg'
+
 type dad = {
-  title: string
-  subTitle: string
-  paragraph: string
+  title?: string
+  subTitle?: string
+  paragraph?: string
   list: string[]
 }
 
 export default function DadForm({ title, subTitle, paragraph, list }: dad) {
 
   return (
-    <div className={styles.main}>
+    <div id="climatização" className={styles.main}>
       <div className={styles.subMain}>
         <div className={styles.text}>
           <h1>{title}</h1>
@@ -24,10 +26,8 @@ export default function DadForm({ title, subTitle, paragraph, list }: dad) {
             })}
           </div>
         </div>
-        <Form titleForm="Gostaria de receber uma
-proposta para o seu negócio?" subTitleForm='A TIConnected® ira te auxiliar com as melhores proposta
-e entregara um suporte completo desde a contratação
-até a instalação e suporte com equipamentos.' />
+        <Form titleForm="Gostaria de receber uma proposta da ConceituAir Tech®?
+" subTitleForm='A ConceituAir Tech® irá te auxiliar com as melhores propostas e entregar um suporte completo desde a contratação até a instalação e suporte com equipamentos.' />
       </div>
     </div>
   )

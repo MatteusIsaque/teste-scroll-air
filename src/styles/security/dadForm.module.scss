@@ -1,5 +1,5 @@
 .main {
-  // background-image: url("./../../img/subPages/fundo-form.jpg");
+  background-image: url(./../../image/subPages/camera_seguranca.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: auto;
@@ -8,38 +8,37 @@
   height: 100vh;
 
   position: relative;
-
-  .text{
+  .text {
     padding-top: 80px;
 
-    h1{
-      color: var(--white);
+    h1 {
+      color: var(--font-white);
 
       font-family: "Poppins";
     }
 
-    h3{
-      color: var(--green-dark);
+    h3 {
+      color: var(--blue-light);
       font-weight: 400;
 
       margin: 14px 0px;
     }
 
-    p{
-      color: var(--white);
+    p {
+      color: var(--font-white);
     }
 
-    div{
+    div {
       margin-top: 18px;
     }
   }
 
-  .subMain{
+  .subMain {
     display: grid;
     grid-template-columns: 50% 50%;
     grid-template-rows: 1fr;
     grid-column-gap: 4%;
-    
+
     position: absolute;
     bottom: -80px;
 

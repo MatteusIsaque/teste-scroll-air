@@ -7,9 +7,8 @@ type quotationType = {
 
 export default function Quotation({ paragraph, buttonText }: quotationType) {
 
-
   return (
-    <div className={styles.main}>
+    <div id="cotaçãoDivClimatização" className={styles.main}>
       <p>{paragraph}</p>
       <button>{buttonText}</button>
     </div>
