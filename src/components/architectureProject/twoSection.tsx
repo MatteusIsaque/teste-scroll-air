@@ -24,9 +24,9 @@ export default function TwoSection({ title, subTitle, titleImage, imageURL, para
         <div className={styles.text}>
           <h2>{titleImage}</h2>
           {
-            paragraph.map((text: string) => {
+            paragraph.map((text: string, index: number) => {
               return (
-                <p>
+                <p key={index}>
                   {text}
                 </p>
               )
