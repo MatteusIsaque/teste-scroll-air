@@ -1,4 +1,4 @@
-import styles from './../../styles/subPages/dadForm.module.scss'
+import styles from './../../styles/security/dadForm.module.scss'
 
 import Form from './form'
 
@@ -9,12 +9,15 @@ type dad = {
   subTitle?: string
   paragraph?: string
   list: string[]
+  color: string
+  paragraphTwo: string
+  textButton: string
 }
 
-export default function DadForm({ title, subTitle, paragraph, list }: dad) {
+export default function DadForm({ title, subTitle, paragraph, paragraphTwo, textButton, list, color }: dad) {
 
   return (
-    <div id="climatização" className={styles.main}>
+    <div style={{ backgroundColor: color }} id="climatização" className={styles.main}>
       <div className={styles.subMain}>
         <div className={styles.text}>
           <h1>{title}</h1>
@@ -25,6 +28,8 @@ export default function DadForm({ title, subTitle, paragraph, list }: dad) {
               return <p key={index}>{item}</p>
             })}
           </div>
+          <p style={{marginTop: '20px'}}>{paragraphTwo}</p>
+          <button>{textButton}</button>
         </div>
         <Form titleForm="Gostaria de receber uma proposta da ConceituAir Tech®?
 " subTitleForm='A ConceituAir Tech® irá te auxiliar com as melhores propostas e entregar um suporte completo desde a contratação até a instalação e suporte com equipamentos.' />

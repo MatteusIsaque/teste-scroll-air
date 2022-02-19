@@ -1,4 +1,4 @@
-import styles from './../../styles/subPages/form.module.scss'
+import styles from './../../styles/security/form.module.scss'
 
 import { useState } from 'react'
 

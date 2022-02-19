@@ -1,0 +1,39 @@
+.main{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+width: 100%;
+
+
+h2{
+  margin: 200px 0px 100px 0px;
+
+  color: var(--blue-dark);
+}
+h3{
+  color: var(--blue-dark);
+  font-size: 1.5rem;
+}
+
+.button {
+  padding: 14px 0px;
+  margin-top: 25px;
+  width: 300px;
+  border-radius: 10px;
+
+  background-color: var(--blue-light);
+  border: 0px;
+
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--blue-dark);
+  cursor: pointer;
+  transition: 0.5s;
+
+  &:hover {
+    filter: brightness(0.8);
+    transition: 0.5s;
+  }
+}
+}
