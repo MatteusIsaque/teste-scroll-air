@@ -9,9 +9,9 @@ type dad = {
   subTitle?: string
   paragraph?: string
   list: string[]
-  color: string
-  paragraphTwo: string
-  textButton: string
+  color?: string
+  paragraphTwo?: string
+  textButton?: string
 }
 
 export default function DadForm({ title, subTitle, paragraph, paragraphTwo, textButton, list, color }: dad) {

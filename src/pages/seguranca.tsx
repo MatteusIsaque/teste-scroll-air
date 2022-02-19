@@ -12,10 +12,10 @@ export default function comunicacaoEmpresarial() {
   return (
     <main>
       <Logo />
-      <DadForm title="Proteja suas conquistas" subTitle="Instalação de sistema de segurança completo" paragraph="
+      {/* <DadForm title="Proteja suas conquistas" subTitle="Instalação de sistema de segurança completo" paragraph="
 Sistema de segurança empresarial, residencial e comercial. Realizamos a instalação e manutenção de equipamentos. Oferecemos soluções modernas com tecnologia de ponta. Zele por tudo que conquistou! Solicite uma cotação grátis."
         list={["- Cameras ", "- Sistema de vigilancia Remota", "- Travas de segurança", "- Cercas e concertina elétrica", "-  Alarmes e campainhas", "- E muito mais"]}
-      />
+      /> */}
 
 
 
