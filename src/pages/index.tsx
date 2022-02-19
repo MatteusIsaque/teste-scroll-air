@@ -3,7 +3,7 @@ import styles from '../styles/index/index.module.scss'
 
 import { Link, Element } from 'react-scroll'
 
-import First from '../components/index/First';
+import First from '../components/index/First'
 import InteriorDesigner from '../components/index/InteriorDesigner';
 import ArchitectureProject from '../components/index/ArchitectureProject';
 import Climate from '../components/index/Climate';
