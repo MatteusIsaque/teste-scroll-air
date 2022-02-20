@@ -30,9 +30,10 @@ export default function ReformaEConstrucão() {
         textButton='Solicitar contato'
         urlImage={Capa}
       />
-      <OurSolution title='NOSSAS SOLUÇÕES'
-        button='VEJA ALGUNS DE NOSSOS PROJETOS'
-        imageUrl={Homem}
+      <OurSolution 
+      // title='NOSSAS SOLUÇÕES'
+      //   button='VEJA ALGUNS DE NOSSOS PROJETOS'
+      //   imageUrl={Homem}
       />
       {/* <DadForm
         color='var(--blue-dark)'
