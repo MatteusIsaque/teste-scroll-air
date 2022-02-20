@@ -1,4 +1,4 @@
-.divText{
+.divText {
   position: absolute;
   text-align: center;
 
@@ -14,11 +14,10 @@
 
   position: relative;
 
-
   .fence {
     clip-path: polygon(0 0, 35% 0, 20% 100%, 0% 100%);
 
-    // background-image: url(./../../image/index/cerca-e-trava.jpg);
+    background-image: url(./../../image/index/cerca-e-trava.jpg);
     background-size: cover;
     background-position: left;
     background-repeat: no-repeat;
@@ -39,7 +38,7 @@
   .camera {
     clip-path: polygon(35% 0, 74% 0, 60% 100%, 20% 100%);
 
-    // background-image: url(./../../image/index/camera.jpg);
+    background-image: url(./../../image/index/camera.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -56,7 +55,7 @@
   }
   .lock {
     clip-path: polygon(74% 0, 100% 0, 100% 100%, 59% 100%);
-    // background-image: url(./../../image/cerca-e-trava.jpg);
+    background-image: url(./../../image/index/cerca-e-trava.jpg);
 
     background-size: cover;
     background-position: right;
