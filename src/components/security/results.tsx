@@ -1,4 +1,4 @@
-import styles from './../../styles/subPages/results.module.scss'
+import styles from './../../styles/security/results.module.scss'
 
 import CardResult from "./cardResults"
 

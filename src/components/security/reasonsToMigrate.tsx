@@ -1,4 +1,4 @@
-import styles from './../../styles/subPages/reasonsToMigrate.module.scss'
+import styles from './../../styles/security/reasonsToMigrate.module.scss'
 
 import CardReasos from "./cardReasons"
 

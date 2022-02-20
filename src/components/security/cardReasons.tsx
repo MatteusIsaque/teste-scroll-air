@@ -1,4 +1,4 @@
-import styles from './../../styles/subPages/cardReasons.module.scss'
+import styles from './../../styles/security/cardReasons.module.scss'
 
 type DadReasons = {
   numberReason: number

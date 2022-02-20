@@ -1,4 +1,4 @@
-import styles from './../../styles/subPages/questions.module.scss'
+import styles from './../../styles/security/questions.module.scss'
 
 type questionsType = {
   question: string

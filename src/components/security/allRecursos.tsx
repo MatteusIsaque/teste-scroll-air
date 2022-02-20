@@ -1,4 +1,4 @@
-import styles from './../../styles/subPages/allRecursos.module.scss'
+import styles from './../../styles/security/allRecursos.module.scss'
 import Image from 'next/image'
 
 import InfoAllRecursos from './infoAllRecursos'

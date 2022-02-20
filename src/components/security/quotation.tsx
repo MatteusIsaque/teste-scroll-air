@@ -1,4 +1,4 @@
-import styles from './../../styles/subPages/quotation.module.scss'
+import styles from './../../styles/security/quotation.module.scss'
 
 type quotationType = {
   paragraph?: string;

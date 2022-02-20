@@ -1,4 +1,4 @@
-import styles from './../../styles/subPages/cardResults.module.scss'
+import styles from './../../styles/security/cardResults.module.scss'
 
 type cardResults = {
   title: string

@@ -1,4 +1,4 @@
-import styles from './../../styles/subPages/recentQuestions.module.scss'
+import styles from './../../styles/security/recentQuestions.module.scss'
 import Questions from './questions'
 import Quotation from './quotation'
 

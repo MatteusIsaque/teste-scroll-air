@@ -1,4 +1,4 @@
-import styles from './../../styles/subPages/infoAllRecursos.module.scss'
+import styles from './../../styles/security/infoAllRecursos.module.scss'
 
 type InfoAllRecursosType = {
   title: string

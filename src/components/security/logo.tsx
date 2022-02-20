@@ -1,4 +1,4 @@
-import styles from './../../styles/subPages/logo.module.scss'
+import styles from './../../styles/security/logo.module.scss'
 import Image from "next/image";
 
 // import LogoPng from './../../img/ticonnected-logo.png'
