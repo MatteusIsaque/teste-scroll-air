@@ -16,7 +16,7 @@ export default function OurSolution({ title, imageUrl, button }: ourSolution) {
       <h1>{title}</h1>
       <div className={styles.content}>
         <div className={styles.text}>
-          <div>
+          {/* <div>
             <h5>Projetos</h5>
             <p>Desenvolvimento e execução de projetos arquitetônicos residenciais e comerciais.</p>
           </div>
@@ -44,7 +44,7 @@ export default function OurSolution({ title, imageUrl, button }: ourSolution) {
             <h5>Limpeza pós-obra</h5>
             <p>Contamos com parceiros especializados para a limpeza pós-obra.</p>
           </div>
-          <div />
+          <div /> */}
           <button>{button}</button>
         </div>
         <div className={styles.homem} >
