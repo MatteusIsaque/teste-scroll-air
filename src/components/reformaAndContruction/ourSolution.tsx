@@ -11,6 +11,7 @@ type ourSolution = {
 
 export default function OurSolution({ title, imageUrl, button }: ourSolution) {
 
+  
   return (
     <div className={styles.main}>
       <h1>{title}</h1>

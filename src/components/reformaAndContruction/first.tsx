@@ -2,12 +2,12 @@ import Image from 'next/image'
 import styles from './../../styles/reformaAndConstruction/first.module.scss'
 
 type propsFirst = {
-  title: string
-  subTitle: string
-  paragraph: string
-  itens: string[]
-  textButton: string
-  urlImage: any
+  title?: string
+  subTitle?: string
+  paragraph?: string
+  itens?: string[] | any
+  textButton?: string
+  urlImage?: any
 }
 
 export default function First({ title, subTitle, paragraph, itens, textButton, urlImage }: propsFirst) {
@@ -19,7 +19,7 @@ export default function First({ title, subTitle, paragraph, itens, textButton, u
         <h2>{subTitle}</h2>
         <p>{paragraph}</p>
         <ul>
-          {itens.map((item, index) => {
+          {itens && itens.map((item: number, index: any) => {
             return (
               <li key={index}>{item}</li>
             )
@@ -29,9 +29,7 @@ export default function First({ title, subTitle, paragraph, itens, textButton, u
           {textButton}
         </button>
       </div>
-      {/* <div className={styles.image}> */}
       <Image src={urlImage} />
-      {/* </div> */}
     </article>
   )
 }

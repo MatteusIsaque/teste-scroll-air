@@ -8,7 +8,7 @@
     flex-direction: column;
     justify-content: center;
     padding: 0px 10%;
-  
+
     max-width: 30vw;
     h1 {
       color: var(--font-white);
@@ -55,6 +55,40 @@
       &:hover {
         filter: brightness(0.8);
         transition: 0.5s;
+      }
+    }
+  }
+}
+
+@media (max-width: 1213px) {
+  .main {
+    display: flex;
+    flex-direction: column;
+    .text {
+      padding: 40px 5%;
+
+      max-width: 100vw;
+      h1{
+        font-size: 1.5rem;
+      }
+
+      h2 {
+        font-size: 1rem;
+        font-weight: 600;
+
+        margin-top: 1rem;
+      }
+
+      p {
+        margin-top: 1.25rem;
+      }
+
+      ul {
+        margin-top: 2rem;
+      }
+
+      button {
+        font-size: 1.25rem;
       }
     }
   }

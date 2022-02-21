@@ -2,7 +2,7 @@
   background-image: url(./../../image/security/camera_seguranca.jpg);
   background-repeat: no-repeat;
   background-position: center;
-  background-size: auto;
+  background-size: cover;
 
   width: 100%;
   height: 800px;
@@ -62,5 +62,54 @@
     bottom: -80px;
 
     margin: 0px 10%;
+  }
+}
+
+@media (max-width: 1036px) {
+  .main {
+    height: 1200px;
+    .subMain {
+      display: flex;
+      flex-direction: column;
+
+      position: absolute;
+      bottom: -180px;
+
+      margin: 0px 10%;
+    }
+
+    .text {
+      margin-bottom: 40px;
+
+      h1 {
+        font-size: 2rem;
+        line-height: 2rem;
+      }
+    }
+  }
+}
+
+@media (max-width: 460px) {
+  .main {
+    .subMain {
+      display: flex;
+      flex-direction: column;
+      
+      position: absolute;
+      bottom: -180px;
+      
+      margin: 0px 5%;
+    
+    }
+    
+    .text {
+      margin-bottom: 20px;
+
+      h1 {
+        font-size: 1.5rem;
+        line-height: 1.5rem;
+
+      }
+    }
   }
 }

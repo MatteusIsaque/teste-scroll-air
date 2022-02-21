@@ -1,5 +1,7 @@
 import styles from './../../styles/architectureProject/fourSection.module.scss'
 
+import Image from 'next/image'
+
 type fourSection = {
   title: string,
   paragraph: string,
@@ -8,7 +10,7 @@ type fourSection = {
   paragraphImage?: string[] | any
   buttonText: string
 
-  ImageURL: string | any
+  ImageURL: any
 }
 
 
@@ -34,7 +36,7 @@ export default function FourSection({ title, paragraph, titleImage, paragraphIma
             <button>{buttonText}</button>
           </div>
           <div>
-            <img src={ImageURL} />
+            <Image src={ImageURL} />
           </div>
         </div>
       }

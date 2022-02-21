@@ -29,3 +29,64 @@
     }
   }
 }
+
+@media (max-width: 1200px) {
+  .main {
+    .mainDiv {
+      display: grid;
+
+      grid-template-columns: 100%;
+      grid-template-rows: 1fr 1fr;
+
+      .text {
+        margin-top: 40px;
+        display: grid;
+
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+
+        grid-column-gap: 28px;
+      }
+    }
+  }
+}
+@media (max-width: 630px) {
+  .main {
+    margin: 40px 5%;
+    .mainDiv {
+      display: grid;
+
+      grid-template-columns: 100%;
+      grid-template-rows: 1fr;
+
+      padding-bottom: 40px;
+
+      .text {
+        margin-top: 0px;
+        display: grid;
+
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+
+        grid-column-gap: 0px;
+        grid-row-gap: 0px;
+      }
+    }
+  }
+}
+
+@media (max-width: 630px) {
+  .main {
+    h3 {
+      font-size: 1.5rem;
+      margin-bottom: 10px;
+    }
+    .mainDiv {
+      .text {
+        h3 {
+          font-size: 1.5rem;
+        }
+      }
+    }
+  }
+}

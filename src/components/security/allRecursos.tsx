@@ -19,16 +19,16 @@ export default function AllRecursos({ title, subTitle, imageItem }: AllRecursosT
         <div>
           <Image src={imageItem} />
         </div>
-        <div>
-          <InfoAllRecursos title="Sistema de Monitoramento" text="Cameras de segurança Alarmes Instalação sistema de monitoramento Manutenção e troca de equipamento "/>
+        <div className={styles.text}>
+          <InfoAllRecursos title="Sistema de Monitoramento" text="Cameras de segurança Alarmes Instalação sistema de monitoramento Manutenção e troca de equipamento " />
 
           <InfoAllRecursos title="Trancas" text="Sistema de tranca elétrica Fechaduras com senha Videoporteiro" />
 
-          <InfoAllRecursos title="Cercas" text="Cerca elétrica Cerca concertina Instalação e Manutenção"/>
+          <InfoAllRecursos title="Cercas" text="Cerca elétrica Cerca concertina Instalação e Manutenção" />
 
-          <InfoAllRecursos title="Sistema" text="Instalação de sistemas e fiação Integração de monitoramento remoto"/>
+          <InfoAllRecursos title="Sistema" text="Instalação de sistemas e fiação Integração de monitoramento remoto" />
 
-          <InfoAllRecursos title="Outros" text="Mais pedidos sobre consulta"/>
+          <InfoAllRecursos title="Outros" text="Mais pedidos sobre consulta" />
         </div>
       </div>
     </section>

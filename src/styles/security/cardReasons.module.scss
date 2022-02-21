@@ -10,15 +10,25 @@
   -webkit-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.337);
   box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.337);
 
-  background-color:  #c9d9dc;
+  background-color: #c9d9dc;
 
-  h3{
+  h3 {
     font-size: 5rem;
 
     color: var(--blue-dark);
   }
 
-  p{
+  p {
     color: var(--blue-dark);
   }
 }
+
+@media (max-width: 493px) {
+  .main {
+    height: 250px;
+    width: 100%;
+    max-width: 300px;
+  }
+}
+
+

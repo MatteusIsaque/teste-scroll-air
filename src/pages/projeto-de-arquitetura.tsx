@@ -9,10 +9,12 @@ import ss from './../image/architectureProject/ss.jpg'
 import ss2 from './../image/architectureProject/ss2.jpg'
 import arquitetura from './../image/architectureProject/arquitetura.jpg'
 import faixa from './../image/architectureProject/faxa2.jpg'
+import FourImage from './../image/architectureProject/designe-interiores-2.jpg'
 
 
 
 export default function ProjetoDeArquitetura() {
+
 
   return (
     <main>
@@ -21,7 +23,8 @@ export default function ProjetoDeArquitetura() {
         ss2
       ]} />
 
-      <TwoSection title='ARQUITETURA' subTitle='Projeto residencial, comercial ou uma simples reforma?' titleImage="Construindo e entregando" imageURL={arquitetura} paragraph={
+      <TwoSection title='ARQUITETURA' subTitle='Projeto residencial, comercial ou uma simples reforma?' titleImage="Construindo e entregando" imageURL={arquitetura} 
+      paragraph={
         [
           'Para um bom projeto, é necessário um conhecimento a fundo de suas expectativas, então uma reunião/entrevista é realizada a fim de conhecer o que você deseja, quais suas necessidades e expectativas em relação ao projeto que será projetado.',
           '- Alvarás construtivos e aprovação de projetos;',
@@ -42,7 +45,7 @@ export default function ProjetoDeArquitetura() {
           "Estamos presentes em todas as etapas de projeto e obra, desde a primeira reunião até a decoração e limpeza final, garantindo todos os prazos, orçamentos, sem dor de cabeça!"
         ]
       }
-        buttonText="Agendar uma visita" ImageURL='https://picsum.photos/seed/10/600/600' />
+        buttonText="Agendar uma visita" ImageURL={FourImage} />
 
       <FifthSection title='PRECISOU CHAMOU!' paragraphs={[
         'Consultoria em arquitetura legal e viabilidade Urbana',

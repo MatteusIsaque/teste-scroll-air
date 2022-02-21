@@ -44,7 +44,8 @@
     padding: 14px 0px;
     width: 100%;
 
-    background-color: #7d5d50;
+    background-color: var(--blue-dark);
+    border-radius: 10px;
     border: 0px;
 
     font-size: 1.5rem;
@@ -81,6 +82,10 @@
   .main {
     margin: 50px 5% 50px 5%;
 
+    h3{
+      margin-top: 40px;
+    }
+
     h2 {
       padding: 10px 0%;
       text-align: center;
@@ -93,5 +98,27 @@
       padding: 20px 0%;
       text-align: center;
     }
+  }
+
+  .content {
+    margin-top: 100px;
+    // width: 100%;
+  
+    display: flex;
+    flex-direction: column-reverse;
+    // justify-content: center;
+  
+    .text {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: center;
+    }
+  
+    p {
+      text-align: start;
+      padding: 20px 0px;
+    }
+  
   }
 }

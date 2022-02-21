@@ -21,6 +21,9 @@ export default function DesignerDeInteriores() {
 
   return (
     <main>
+      <head>
+        <title>Designer de interiores - ConteituAir Tech</title>
+      </head>
       <Slide imagesURL={[
         Ambiente,
         DecoraçãoSala,

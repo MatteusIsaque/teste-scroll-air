@@ -5,6 +5,7 @@ type InfoAllRecursosType = {
   text: string
 }
 
+
 export default function InfoAllRecursos({ title, text }: InfoAllRecursosType) {
 
   return (

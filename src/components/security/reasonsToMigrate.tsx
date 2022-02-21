@@ -8,6 +8,7 @@ type reasosToMigrateType = {
 
 }
 
+
 export default function ReasosToMigrate({ title, paragraph }: reasosToMigrateType) {
 
 

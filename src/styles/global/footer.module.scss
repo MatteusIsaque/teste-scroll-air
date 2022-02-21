@@ -1,11 +1,24 @@
-.main{
+.main {
   background-color: var(--blue-dark);
   color: var(--font-white);
   text-align: center;
   font-size: 10px;
   padding: 10px 0px;
 
-  a{
+  .lineTop {
+    height: 2px;
+
+    background: linear-gradient(90deg, var(--blue-light) 27%, var(--blue-dark) 93%);
+    margin: 4px 0px 12px 0px;
+  }
+
+  p {
     color: var(--font-white);
+  }
+
+  a {
+    color: var(--font-white);
+
+    text-decoration: none;
   }
 }
