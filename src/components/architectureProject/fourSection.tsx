@@ -11,6 +11,7 @@ type fourSection = {
   ImageURL: string | any
 }
 
+
 export default function FourSection({ title, paragraph, titleImage, paragraphImage, buttonText, ImageURL }: fourSection) {
 
   return (

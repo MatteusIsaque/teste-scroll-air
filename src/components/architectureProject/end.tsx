@@ -9,7 +9,7 @@ export default function End() {
           <p>whatsapp: (99) 99999-9999</p>
           <p>whatsapp: (99) 99999-9999</p>
           <p>whatsapp: (99) 99999-9999</p>
-          <p>email:contato@conceituairtech.com.br</p>
+          {/* <p>email:contato@conceituairtech.com.br</p> */}
 
           <button>CHAMAR AGORA</button>
         </div>

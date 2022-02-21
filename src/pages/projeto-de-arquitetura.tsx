@@ -5,20 +5,23 @@ import FourSection from "../components/architectureProject/fourSection";
 import Slide from "../components/architectureProject/slide";
 import TwoSection from "../components/architectureProject/twoSection";
 
+import ss from './../image/architectureProject/ss.jpg'
+import ss2 from './../image/architectureProject/ss2.jpg'
+import arquitetura from './../image/architectureProject/arquitetura.jpg'
+import faixa from './../image/architectureProject/faxa2.jpg'
+
+
 
 export default function ProjetoDeArquitetura() {
 
   return (
     <main>
       <Slide imagesURL={[
-        'https://picsum.photos/seed/1/1600/920',
-        'https://picsum.photos/seed/2/1600/920',
-        'https://picsum.photos/seed/3/1600/920',
-        'https://picsum.photos/seed/4/1600/920',
-        'https://picsum.photos/seed/5/1600/920',
+        ss,
+        ss2
       ]} />
 
-      <TwoSection title='ARQUITETURA' subTitle='Projeto residencial, comercial ou uma simples reforma?' titleImage="Construindo e entregando" imageURL='https://picsum.photos/seed/7/600/600' paragraph={
+      <TwoSection title='ARQUITETURA' subTitle='Projeto residencial, comercial ou uma simples reforma?' titleImage="Construindo e entregando" imageURL={arquitetura} paragraph={
         [
           'Para um bom projeto, é necessário um conhecimento a fundo de suas expectativas, então uma reunião/entrevista é realizada a fim de conhecer o que você deseja, quais suas necessidades e expectativas em relação ao projeto que será projetado.',
           '- Alvarás construtivos e aprovação de projetos;',
@@ -31,7 +34,7 @@ export default function ProjetoDeArquitetura() {
         buttonText='Realizar chamada'
       />
 
-      <CallZap imageURL='https://picsum.photos/seed/9/1920/400' />
+      <CallZap imageURL={faixa} />
 
       <FourSection title='Acompanhamento Profissional' paragraph='São feitas visitas ao local do projeto, para que seja feito o Levantamento Métrico, elaboração de apontamentos com aspectos específicos. Na finalização do projeto, é entregue ao cliente um caderno com todos os dados necessários do projeto. Você tem a garantia de um trabalho qualificado e seguro!' titleImage="Solução de projetos" paragraphImage={
         [

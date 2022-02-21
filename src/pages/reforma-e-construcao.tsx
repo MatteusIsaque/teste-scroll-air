@@ -4,10 +4,11 @@ import LogoMenu from "../components/global/logoMenu";
 import First from "../components/reformaAndContruction/first";
 import OurSolution from "../components/reformaAndContruction/ourSolution";
 import SlideReformaAndConstruction from "../components/reformaAndContruction/slide";
-import DadForm from "../components/security/dadForm";
+import DadForm from "../components/reformaAndContruction/dadForm";
 
 import Capa from './../image/reformaAndContruction/capa.jpg'
 import Homem from './../image/reformaAndContruction/homem.jpg'
+import End from "../components/architectureProject/end";
 
 export default function ReformaEConstrucão() {
 
@@ -43,11 +44,14 @@ export default function ReformaEConstrucão() {
         paragraphTwo='Solicite uma cotação em nosso formulario ou realize uma contação rápida pelo whatsapp'
         textButton='CHAMAR NO WHATSAPP'
       />
-      <SlideReformaAndConstruction
-        title='VEJA ALGUNS PROJETOS CONCLUIDO'
+
+        <End />
+
+      {/* <SlideReformaAndConstruction
+        // title='VEJA ALGUNS PROJETOS CONCLUIDO'
         titleButton="Obra de qualidade é aquela que não gera dor de cabeça"
         buttonText='CHAMAR AGORA'
-      />
+      /> */}
 
       <Footer />
     </main>

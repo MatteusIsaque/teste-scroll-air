@@ -1,10 +1,11 @@
+import Image from 'next/image'
 import styles from './../../styles/architectureProject/twoSection.module.scss'
 
 type PropsTwoSection = {
   title: string,
   subTitle: string,
   titleImage: string,
-  imageURL: string,
+  imageURL: any,
   paragraph?: string[] | any,
   buttonText: string
 }
@@ -19,7 +20,7 @@ export default function TwoSection({ title, subTitle, titleImage, imageURL, para
       <p>{subTitle}</p>
       <div className={styles.textDiv}>
         <div>
-          <img src={imageURL} />
+          <Image src={imageURL} />
         </div>
         <div className={styles.text}>
           <h2>{titleImage}</h2>

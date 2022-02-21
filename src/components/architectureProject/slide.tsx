@@ -30,7 +30,7 @@ export default function Slide({ imagesURL }: PropsSlide) {
           imagesURL.map((item, index) => {
             return (
               <div key={index}>
-                <img src={item} />
+                <Image src={item} />
               </div>
             )
           })

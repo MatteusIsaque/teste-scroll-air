@@ -4,9 +4,9 @@
   align-items: center;
   justify-content: center;
 
-  margin: 240px 10% 100px 10%;
+  margin: 140px 10% 100px 10%;
 
-  h1 {
+  h2 {
     max-width: 600px;
     padding: 20px 10%;
   }
@@ -56,6 +56,42 @@
     &:hover {
       filter: brightness(0.8);
       transition: 0.5s;
+    }
+  }
+}
+
+@media (max-width: 842px) {
+  .main {
+    margin: 100px 5% 100px 5%;
+
+    h2 {
+      padding: 10px 0%;
+      text-align: center;
+    }
+
+    p {
+      max-width: 900px;
+      padding: 20px 0%;
+      text-align: center;
+    }
+  }
+}
+
+@media (max-width: 623px) {
+  .main {
+    margin: 50px 5% 50px 5%;
+
+    h2 {
+      padding: 10px 0%;
+      text-align: center;
+
+      font-size: 1.5rem;
+    }
+
+    p {
+      max-width: 900px;
+      padding: 20px 0%;
+      text-align: center;
     }
   }
 }

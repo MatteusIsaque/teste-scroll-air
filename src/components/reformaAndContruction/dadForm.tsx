@@ -1,6 +1,6 @@
-import styles from './../../styles/security/dadForm.module.scss'
+import styles from './../../styles/reformaAndConstruction/dadForm.module.scss'
 
-import Form from './form'
+import Form from './../security/form'
 
 import arCondicionado from './../../image/subPages/ar-condicionado.jpg'
 

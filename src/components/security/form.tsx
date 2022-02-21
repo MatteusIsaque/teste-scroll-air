@@ -29,7 +29,7 @@ export default function Form({ titleForm, subTitleForm }: dadForm) {
       </div>
       <textarea placeholder="Nos conte mais sobre sua procura, iremos preparar um orçamento para você."></textarea>
       <div className={styles.radio} style={{ marginTop: "20px" }}>
-        <input type="radio" value="concordo" required /> Concordo em permitir que a TiConected tenha acesso aos meus dados
+        <input type="radio" value="concordo" required /> Concordo em permitir que a ConteituAir Tech tenha acesso aos meus dados
         para me responder com proposta promocional referente ao
         meu pedido.
       </div>
