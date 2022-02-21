@@ -1,6 +1,6 @@
 import AllRecursos from "../components/security/allRecursos";
 import DadForm from "../components/security/dadForm";
-import Logo from "../components/security/logo";
+// import Logo from "../components/security/logo";
 import Quotation from "../components/security/quotation";
 import ReasosToMigrate from "../components/security/reasonsToMigrate";
 import RecentQuestions from "../components/security/recentQuestions";
